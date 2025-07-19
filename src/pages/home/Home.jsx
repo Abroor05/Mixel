@@ -9,7 +9,7 @@ function Home() {
           <div className="container">
 
           <Hero/>
-
+                <p>salom</p>
             <Cards />
           </div>
         </section>
