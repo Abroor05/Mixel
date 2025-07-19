@@ -1,0 +1,111 @@
+.card {
+  width: 280px;
+  border: 1px solid #F2F2F2;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 0 #c8c6c6;
+}
+
+.cardImg {
+  width: 100%;
+}
+
+.cardImg .img {
+  width: 140px;
+  margin: auto;
+}
+
+.cardImg .img img {
+  width: 100%;
+}
+
+.cardInfo .prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cardInfo .prices h4 {
+  color: #909090;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cardInfo .prices h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ed3729;
+}
+
+.cardInfo .title {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.cardInfo .desc {
+  font-size: 14px;
+  color: #909090;
+  text-align: center;
+}
+
+.countDay {
+    padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.countDay span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.countDay span h4 {
+  font-size: 16px;
+  color: #202020;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.countDay span p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
+.shops {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:#BDBDBD;
+}
+
+.shops h4 {
+    color: #909090;
+    font-weight: 400;
+}
+
+.shops span {
+   font-size: 24px; 
+   cursor: pointer;
+   transition: all .3s ease;
+}
+
+.shops span:hover {
+    color: #ed3729;
+}
+
