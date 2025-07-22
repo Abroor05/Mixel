@@ -12,7 +12,7 @@ function Cards() {
           <div className="img">
             <img src="/imgs/router.png" alt="" />
             <div className="sale">
-
+                <span>-3%</span>
             </div>
           </div>
         </div>
