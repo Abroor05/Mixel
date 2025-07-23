@@ -1,18 +1,19 @@
 import React from "react";
-import "./Cards.css"
+import "./Cards.css";
 import { FaRegHeart } from "react-icons/fa";
 import { LuShoppingCart } from "react-icons/lu";
 import { RiScalesFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
-function Cards() {
+function Cards({ item }) {
   return (
     <>
-      <div className="card">
+      <Link to={`/oneprodact/${item?.id}`} className="card">
         <div className="cardImg">
           <div className="img">
-            <img src="/imgs/router.png" alt="" />
+            <img src={item?.main_image} alt="" />
             <div className="sale">
-                <span>-3%</span>
+              <span>-3%</span>
             </div>
           </div>
         </div>
@@ -20,72 +21,68 @@ function Cards() {
         <div className="cardInfo">
           <div className="prices">
             <h4>
-              <del>1 529 000 сум</del>
+              <del>{item?.price}</del>
             </h4>
             <h4>|</h4>
-            <h3>350 000 сум</h3>
+            <h3>{item?.monthly_price}</h3>
           </div>
 
-
-          <h3 className="title">Умные часы Haylou RT-LS05S</h3>
+          <h3 className="title">{item?.name}</h3>
 
           <p className="desc">Предложение заканчивается через:</p>
 
           <div className="countDay">
             <span>
-                <h4>27</h4>
-                <p>ДНЕЙ</p>
+              <h4>27</h4>
+              <p>ДНЕЙ</p>
             </span>
 
             <span>
-                
-                <p>|</p>
+              <p>|</p>
             </span>
 
             <span>
-                <h4>21</h4>
-                <p>ЧАСОВ</p>
+              <h4>21</h4>
+              <p>ЧАСОВ</p>
             </span>
 
             <span>
-                <p>|</p>
-            </span>
-
-                <span>
-                <h4>32</h4>
-                <p>МИНУТ</p>
+              <p>|</p>
             </span>
 
             <span>
-                <p>|</p>
+              <h4>32</h4>
+              <p>МИНУТ</p>
+            </span>
+
+            <span>
+              <p>|</p>
             </span>
             <span>
-                <h4>05</h4>
-                <p>СЕКУНД</p>
+              <h4>05</h4>
+              <p>СЕКУНД</p>
             </span>
           </div>
 
-            <div className="shops">
-                <span>
-                    <LuShoppingCart />
-                </span>
+          <div className="shops">
+            <span>
+              <LuShoppingCart />
+            </span>
 
-                <h4>|</h4>
+            <h4>|</h4>
 
-                <span>
-                    <FaRegHeart />
-                </span>
+            <span>
+              <FaRegHeart />
+            </span>
 
-                <h4>|</h4>
+            <h4>|</h4>
 
-                <span>
-                    <RiScalesFill />
-                </span>
-
-            </div>
-
+            <span>
+              <RiScalesFill />
+            </span>
+          </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 }
